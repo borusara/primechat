@@ -129,7 +129,7 @@ const Navbar = () => {
       ) : (
         <></>
       )}
-      <div className="app__name">ChatterBox</div>
+      <div className="app__name">PrimeChat</div>
       <div className="navbar__icons">
         <div className="profile__image">
           <img
