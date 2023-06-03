@@ -51,7 +51,7 @@ const GroupChatModal = ({
     const found = selectedUsers.find((el) => el._id === newuser._id);
 
     if (found) {
-      return toast.error("User already selected");
+      return toast.error("User is already selected");
     }
     setSelectedUsers([...selectedUsers, newuser]);
   };
@@ -59,10 +59,10 @@ const GroupChatModal = ({
   const createNewGroup = async () => {
     try {
       if (selectedUsers.length < 2) {
-        return toast.error("Select at least 2 users");
+        return toast.error("Select at least 2 users to continue");
       }
       if (!groupName) {
-        return toast.error("Group name must be provided");
+        return toast.error("Group name must be provided to continue");
       }
 
       const users = selectedUsers.map((ele) => {
