@@ -62,7 +62,7 @@ const Chat = () => {
     }
   }, [currentChat]);
 
-  if (loading) return <h2 className="flex-center loading">Loading...</h2>;
+  if (loading) return <h2 className="flex-center loading">Loading...Please wait</h2>;
 
   if (!currentChat._id)
     return (
@@ -71,7 +71,7 @@ const Chat = () => {
           className="flex-center"
           style={{ height: "100%" }}
         >
-          Click on a chat to view messages
+          Click on a chat to view all the messages
         </h2>
       </section>
     );
